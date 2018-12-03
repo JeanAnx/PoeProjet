@@ -1,3 +1,6 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
 body{
     margin: 0;
     background-color: ghostwhite;
@@ -77,13 +80,14 @@ main{
     margin: 1em;
 }
 #zoneFiltre{
-    background-color: #33d9b2;
+    background-color: white;
+    border-bottom: 2px solid #33d9b2;
 }
 #tableFiltre{
     vertical-align: top;
 }
 #entete{
-    background-color: #00AC85;
+    background-color: #33d9b2;
     height: 2em;
     text-align: right;
     display: flex;
@@ -106,5 +110,107 @@ main{
     margin: 0 1em 0 0;
 }
 article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-bottom: 1px solid black;
+    width: 100%;
+}
+.articleImg{
+    background-size: cover;
+    width: 10em;
+    height: 10em;
+    margin: 0.3em 0 0.3em 0;
+    text-align: center;
+}
+.articleGauche{
+    width: 60%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px black;
+    border: 0;
+}
+#find{
+    margin: 0 1em 0 0;
+    width: 100%;
+}
+#recherche{
+
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+#menu ul{
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+    text-align:center;
+}
+#menu li{
+    float: left;
+    margin: auto;
+    border-left: 2px solid #33d9b2;
+}
+
+#menu li:first-child{
+    border-left: none;
+}
+#menu li:last-child{
+    border-right: 2px solid White;
+}
+.pere li:last-child{
+    border-radius: 0 0 12px 12px;
+}
+
+#menu li a{
+    display:block;
+    width:300px;
+    color:#33d9b2;
+    text-decoration:none;
+    padding:5px;
+    font-size: 20px;
+}
+#menu ul li ul{
+    display:none;
+}
+#menu li a:hover{
+    font-weight: bolder;
+}
+#menu li ul li a:hover{
+    font-weight: bolder;
+}
+#menu ul li:hover ul{
+    display:block;
+}
+#menu li:hover ul li{
+    background-color: white;
+    border-left: 2px solid #33d9b2;
+    border-right: 2px solid #33d9b2;
+    margin-left: -2px;
+    float:none;
+}
+#cpVille{
+    background-color: white;
+    border-left: 2px solid #33d9b2;
+    border-right: 2px solid #33d9b2;
+    margin-left: -2px;
+    float:none;
+
+    border-bottom: 1px solid #33d9b2;
+}
+#menu li:hover ul li:last-child{
+    border-bottom: 1px solid #33d9b2;
+}
+#menu li ul{
+    position:absolute;
+}
+
+#menu li ul li a{
+    color:#33d9b2;
 }
