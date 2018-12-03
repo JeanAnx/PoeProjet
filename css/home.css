@@ -1,0 +1,13 @@
+h1 {
+    
+}
+
+.formHome {
+    margin: 5em auto;
+}
+
+button.btn {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
