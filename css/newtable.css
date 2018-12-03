@@ -1,0 +1,13 @@
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+h1 {
+    margin: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.formNewTable {
+    width: 40%;
+    margin: 1em auto;
+}
