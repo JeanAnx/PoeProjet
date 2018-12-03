@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    background-color: ghostwhite;
+}
+.switch{
+    display:none;
+}
+.ui-content{
+    background: -webkit-linear-gradient(top,#dedede,#fefefe);
+    border-radius: 20px;
+    display: inline-block;
+    float: right;
+    height: 46px;
+    overflow: hidden;
+    padding: 5px;
+}
+.ui-switch{
+    background: #FFF;
+    border: 1px #cfc8bc solid;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 1), 0 1px 1px rgba(0, 0, 0, .15) inset;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 2px;
+    position: relative;
+    width: 120px;
+}
+.switch:checked ~ label .ui-switch{
+    background: -webkit-linear-gradient(top,#fa9100,#f44800);
+}
+.ui-switch-handle{
+    background: -webkit-linear-gradient(top,#f7f5f2,#e3dfd6);
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,.3), 0 1px 1px rgba(255,255,255,.8) inset;
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    width: 20px;
+}
+.switch:checked ~ label .ui-switch-handle{
+    right: 2px;
+}
+.ui-switch-handle:before{
+    margin-left: -5.5em;
+    line-height: 22px;
+    content: "Carte activé";
+    color: #FFF;
+}
+.ui-switch-handle:after{
+    position: relative;
+    right: -2em;
+    top: -20px;
+    content: "Carte désactivé";
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#listeResultat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 38em;
+    border-radius: 10px 0 0 10px;
+    overflow: auto;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 1px 1px 1px 1px black;
+}
+#map{
+    width: 49%;
+    height: 40em;
+    margin: 1em;
+}
+#zoneFiltre{
+    background-color: #33d9b2;
+}
+#tableFiltre{
+    vertical-align: top;
+}
+#entete{
+    background-color: #00AC85;
+    height: 2em;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#entete img{
+    border-radius: 20px;
+    height: 2em;
+}
+#boutonSwitch{
+    position: absolute;
+    top: 19em;
+    right: 2em;
+}
+#TextMenuHaut{
+    font-weight: bolder;
+    color: white;
+    margin: 0 1em 0 0;
+}
+article{
+    border-bottom: 1px solid black;
+}
