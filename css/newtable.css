@@ -1,0 +1,39 @@
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+h1 {
+    color: #33d9b2;
+    margin: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+h5 {
+    margin-bottom: 1em;;
+}
+
+.formNewTable {
+    width: 40%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border: 1px solid #33d9b2;
+    border-radius: .5em;
+}
+
+button.btn {
+    display: block;
+    width: 30%;
+    color: white;
+    background-color: #33d9b2;
+    margin: 1.5em auto;
+}
+
+.stylesList {
+    margin: 1em;
+    text-align: center;
+}
+
+.divSeats {
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/newtable.css">
+
+    <title>Ajouter une table</title>
+</head>
+<body>
+
+        <form class="formNewTable">
+
+            <h1>Nouvelle table</h1>
+
+            <div class="form-group">
+                <!-- <label for="nameTable">Nom de l'établissement :</label> -->
+                <input required type="text" class="form-control" id="name" name="name" placeholder="Nom de l'établissement">
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="description">Description</label> -->
+                <textarea required class="form-control" id="description" name="description" rows="3">Ajouter une description</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Ajouter des images</label>
+                <input type="file" class="form-control-file" id="picture" multiple>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group col-md-6 divSeats">
+
+                    <!-- <label for="">Nombre de couverts :</label> -->
+                    <input required class="form-control" type="number" min="1" name="seats" placeholder="Nombre de couverts">
+
+                </div>
+
+                 <div class="form-group col-md-6">
+
+                    <!-- <label for="">Prix par personne :</label> -->
+                    <select required class="custom-select col-md-12" name="price" id="price">
+                        <option value="" selected disabled>Prix par personne</option>
+                        <option value="">Moins de 20 euros</option>
+                        <option value="">20 à 30 euros</option>
+                        <option value="">30 à 40 euros</option>
+                        <option value="">+ de 40 euros</option>
+                    </select>
+    
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="inputAddress">Adresse :</label> -->
+                <input required type="text" class="form-control" id="address" name="address" placeholder="Adresse">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                <!-- <label for="inputCity">City</label> -->
+                <input required type="text" class="form-control" id="city" name="city" placeholder="Ville">
+                </div>
+                
+                <div class="form-group col-md-3">
+                    <!-- <label for="inputZip">Code postal :</label> -->
+                    <input required type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Code postal">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <!-- <label for="inputPassword4">Password</label> -->
+                    <input required type="text" class="form-control" id="telephone" name="tel" placeholder="Téléphone">
+                </div>
+            </div>
+
+            <div required class="form-row">
+                <div class="form-group col-md-12">
+                    <!-- <label for="inputEmail4">site</label> -->
+                    <input type="text" class="form-control" id="website" name="site" placeholder="Site web">
+                </div>
+
+                
+            </div>
+
+
+
+            <div class="form-group styles stylesList">
+                    <h5>Style de cuisine : </h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="Gluten">
+                        <label class="form-check-label" for="inlineRadio1">Vegan</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="Poisson">
+                        <label class="form-check-label" for="inlineRadio2">Sans gluten</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="Crustacés">
+                        <label class="form-check-label" for="inlineRadio3">Française</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio4" value="Soja">
+                        <label class="form-check-label" for="inlineRadio4">Japonaise</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio5" value="Lait">
+                        <label class="form-check-label" for="inlineRadio5">Chinoise</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio6" value="Fruits à coque">
+                        <label class="form-check-label" for="inlineRadio6">Marocaine</label>
+                    </div>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio7" value="Arachides">
+                        <label class="form-check-label" for="inlineRadio7">Indienne</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio8" value="Arachides">
+                            <label class="form-check-label" for="inlineRadio8">Bretonne</label>
+                        </div>
+    
+                </div>
+
+                <button type="submit" class="btn">Créer votre table</button>
+            </form>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
