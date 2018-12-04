@@ -1,5 +1,4 @@
-html {
-    font-family: 'Lato', sans-serif;
+body {
 }
 
 hr {
@@ -9,13 +8,12 @@ hr {
 
 
 h1 , h2 , h5 {
+    font-family: 'Lato', sans-serif;
     margin-top: 1em;
     text-align: center;
     color: #33d9b2;
     font-weight: normal;
 }
-
-
 
 h5 {
     margin-bottom: 1em;
@@ -43,8 +41,7 @@ table thead td:first-child {
 table tbody td {
     color: #33d9b2;
     height: 2em;
-    /* font-weight: bold; */
-    /* text-align: left; */
+
 }
 
 

@@ -13,255 +13,191 @@
 <body>
 
     <header></header>
-
     <main>
-
-    <section class="bookingsUser">
-        <h2>Espace client - Mes réservations</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>Numéro de réservation</td>
-                    <td>Date et heure</td>
-                    <td>Nom de l'établissement</td>
-                    <td>Ville</td>
-                    <td>Convives</td>
-                    <td>Prix total</td>
-                    <td>Statut</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>5864</td>
-                    <td>Mer. 04/12/18</td>
-                    <td>Chez René</td>
-                    <td>Nantes</td>
-                    <td>3</td>
-                    <td>60 €</td>
-                    <td>OK</td>
-                </tr>
-                <tr>
-                    <td>784</td>
-                    <td>Sam. 10/12/18</td>
-                    <td>La table à Jacqueline</td>
-                    <td>Saint-Nazaire</td>
-                    <td>2</td>
-                    <td>50 €</td>
-                    <td>En attente</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <hr>
-
-    <section class="bookingsHost">
-            <h2>Espace hôte - Mes réservations pour la table {{ nom table }}</h2>
+        <section class="bookingsUser">
+            <h2>Espace client - Mes réservations</h2>
             <table>
-             <thead>
-                 <tr>
-                     <td>Numéro de réservation</td>
-                     <td>Date et heure</td>
-                     <td>Nom</td>
-                     <td>Convives</td>
-                     <td>Prix total</td>
-                     <td>Informations santé</td>
-                 </tr>
-             </thead>
-             <tbody>
-                <tr>
-                    <td>5864</td>
-                    <td>Mer. 04/12/18</td>
-                    <td>Henry</td>
-                    <td>3</td>
-                    <td>60 €</td>
-                    <td>Sans gluten</td>
-                </tr>
-                <tr>
-                    <td>784</td>
-                    <td>Sam. 10/12/18</td>
-                    <td>Jojo</td>
-                    <td>2</td>
-                    <td>50 €</td>
-                    <td>Allergie arachides</td>
-                </tr>
-                <tr>
-                    <td>785</td>
-                    <td>Sam. 10/12/18</td>
-                    <td>Marcel</td>
-                    <td>6</td>
-                    <td>300 €</td>
-                    <td>Allergie soja</td>
-                </tr>
-            </tbody>
-        </table>
-            
+                <thead>
+                    <tr>
+                        <td>Numéro de réservation</td>
+                        <td>Date et heure</td>
+                        <td>Nom de l'établissement</td>
+                        <td>Ville</td>
+                        <td>Convives</td>
+                        <td>Prix total</td>
+                        <td>Statut</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>530</td>
+                        <td>Mer. 04/12/18</td>
+                        <td>Chez René</td>
+                        <td>Nantes</td>
+                        <td>3</td>
+                        <td>60 €</td>
+                        <td>OK</td>
+                    </tr>
+                    <tr>
+                        <td>532</td>
+                        <td>Sam. 10/12/18</td>
+                        <td>La table à Jacqueline</td>
+                        <td>Saint-Nazaire</td>
+                        <td>2</td>
+                        <td>50 €</td>
+                        <td>En attente</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-    <hr>
+        <hr>
 
+        <section class="bookingsHost">
+            <h2>Espace hôte - Mes réservations pour la table {{ nom table }}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Numéro de réservation</td>
+                        <td>Date et heure</td>
+                        <td>Nom</td>
+                        <td>Convives</td>
+                        <td>Prix total</td>
+                        <td>Informations santé</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5864</td>
+                        <td>Mer. 04/12/18</td>
+                        <td>Henry</td>
+                        <td>3</td>
+                        <td>60 €</td>
+                        <td>Sans gluten</td>
+                    </tr>
+                    <tr>
+                        <td>784</td>
+                        <td>Sam. 10/12/18</td>
+                        <td>Jojo</td>
+                        <td>2</td>
+                        <td>50 €</td>
+                        <td>Allergie arachides</td>
+                    </tr>
+                    <tr>
+                        <td>785</td>
+                        <td>Sam. 10/12/18</td>
+                        <td>Marcel</td>
+                        <td>6</td>
+                        <td>300 €</td>
+                        <td>Allergie soja</td>
+                    </tr>
+                </tbody>
+            </table>        
+        </section>
+         <hr>
 
-    <section class="infos">
+        <section class="infos">
             <form class="formInfos col-md-4">
-
                 <h3>Mes infos personnelles</h3>
-
-            <div class="form-row">
+                <div class="form-row">
                     <div class="form-group col-md-6">
                         <!-- <label for="firstname">Prénom</label> -->
                         <input type="text" class="form-control" id="firstname" placeholder="User First Name" name="firstname">
                     </div>
-    
                     <div class="form-group col-md-6">
                         <!-- <label for="lastname">Nom</label> -->
                         <input type="text" class="form-control" id="lastname" name="lastname" placeholder="User Name">
                     </div>
                 </div>
-    
                 <div class="form-group">
-    
                     <!-- <label for="Email4">Email</label> -->
                     <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-    
-                </div>
-                
-    
+                </div>            
                 <div class="form-group">
                     <!-- <label for="tel">Téléphone :</label> -->
                     <input type="text" class="form-control" id="tel" name="tel" placeholder="Téléphone">
-                </div>
-       
+                </div>    
                 <div class="form-group intolerances">
                     <h5>Mes infos santé : </h5>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="Gluten">
                         <label class="form-check-label" for="inlineRadio1">Gluten</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="Poisson">
                         <label class="form-check-label" for="inlineRadio2">Poisson</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="Crustacés">
                         <label class="form-check-label" for="inlineRadio3">Crustacés</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio4" value="Soja">
                         <label class="form-check-label" for="inlineRadio4">Soja</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio5" value="Lait">
                         <label class="form-check-label" for="inlineRadio5">Lait</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio6" value="Fruits à coque">
                         <label class="form-check-label" for="inlineRadio6">Fruits à coque</label>
                     </div>
-    
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio7" value="Arachides">
                         <label class="form-check-label" for="inlineRadio7">Arachides</label>
                     </div>
-    
                 </div>
-    
                 <button type="submit" class="btn">Modifier mes infos</button>
-            
             </form>
-    
-
-
-
-    </section>
-
-
+        </section>
         <section>
-
-
             <form class="formPassword col-md-3">
-
                 <h3>Changer de mot de passe</h3>
-
                 <div class="form-group">
-
                     <!-- <label for="inputPassword4">Mot de passe</label> -->
                     <input type="password" class="form-control" id="oldPassword" name="oldPassword" placeholder="Ancien mot de passe">
-    
                 </div>
-
-
                 <div class="form-group">
-    
                     <!-- <label for="inputPassword4">Mot de passe</label> -->
                     <input type="password" class="form-control" id="newPassword" name="newPassword" placeholder="Nouveau mot de passe">
-    
                 </div>
-        
-                    <div class="form-group">
-        
-                        <!-- <label for="inputPassword4">Mot de passe</label> -->
-                        <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Veuillez confirmer votre nouveau mot de passe">
-        
-                    </div>
-
+                <div class="form-group">
+                    <!-- <label for="inputPassword4">Mot de passe</label> -->
+                    <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Veuillez confirmer votre nouveau mot de passe">
+                </div>
                 <button type="submit" class="btn">Changer</button>
-
-
             </form>
-
-
         </section>
-
         <hr>
-
         <section class="tableInfos">
-
             <form class="formMyTable">
-
                 <h2>Ma table d'hôtes</h2>
-
                 <div class="form-group">
                     <!-- <label for="nameTable">Nom de l'établissement :</label> -->
                     <input required type="text" class="form-control" id="name" name="name" placeholder="La cantine à René">
                 </div>
-    
                 <div class="form-group">
                     <!-- <label for="description">Description</label> -->
                     <textarea required class="form-control" id="description" name="description" rows="3">Spécialités nantaises et produits du terroir dans une brasserie lumineuse installée dans une ex-fonderie.</textarea>
                 </div>
-    
                 <div class="galerieTable">
                     <h5>Mes images</h5>
                     <img src="img/fonderie1.jpg" alt="">
                     <img src="img/fonderie2.jpg" alt="">
                     <img src="img/fonderie3.jpg" alt="">
                     <img src="img/fonderie4.jpg" alt="">
-
-
-
                 </div>
-
                 <div class="form-group">
                     <label for="picture">Ajouter des images</label>
                     <input type="file" class="form-control-file" id="picture" multiple>
                 </div>
-    
                 <div class="form-row">
-    
                     <div class="form-group col-md-6 divSeats">
-    
                         <!-- <label for="">Nombre de couverts :</label> -->
                         <input required class="form-control" type="number" min="1" name="seats" placeholder="Nombre de couverts">
-    
                     </div>
-    
-                     <div class="form-group col-md-6">
-    
+                    <div class="form-group col-md-6">
                         <!-- <label for="">Prix par personne :</label> -->
                         <select required class="custom-select col-md-12" name="price" id="price">
                             <option value="" selected disabled>Prix par personne</option>
@@ -270,102 +206,71 @@
                             <option value="">30 à 40 euros</option>
                             <option value="">+ de 40 euros</option>
                         </select>
-        
                     </div>
-    
                 </div>
-    
                 <div class="form-group">
                     <!-- <label for="inputAddress">Adresse :</label> -->
                     <input required type="text" class="form-control" id="address" name="address" placeholder="Adresse">
                 </div>
-                
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                    <!-- <label for="inputCity">City</label> -->
-                    <input required type="text" class="form-control" id="city" name="city" placeholder="Ville">
-                    </div>
-                    
+                        <!-- <label for="inputCity">City</label> -->
+                        <input required type="text" class="form-control" id="city" name="city" placeholder="Ville">
+                    </div>                   
                     <div class="form-group col-md-3">
                         <!-- <label for="inputZip">Code postal :</label> -->
                         <input required type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Code postal">
                     </div>
-    
                     <div class="form-group col-md-5">
                         <!-- <label for="inputPassword4">Password</label> -->
                         <input required type="text" class="form-control" id="telephone" name="tel" placeholder="Téléphone">
                     </div>
                 </div>
-    
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <!-- <label for="inputEmail4">site</label> -->
                         <input required type="text" class="form-control" id="website" name="site" placeholder="Site web">
                     </div>
-    
-                    
                 </div>
-    
-    
-    
                 <div class="form-group styles stylesList">
-                        <h5>Style de cuisine : </h5>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="vegan" value="Vegan">
-                            <label class="form-check-label" for="vegan">Vegan</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="sansgluten" value="sansgluten">
-                            <label class="form-check-label" for="sansgluten">Sans gluten</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="française" value="française">
-                            <label class="form-check-label" for="française">Française</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="japonaise" value="japonaise">
-                            <label class="form-check-label" for="japonaise">Japonaise</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="chinoise" value="chinoise">
-                            <label class="form-check-label" for="chinoise">Chinoise</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="marocaine" value="marocaine">
-                            <label class="form-check-label" for="marocaine">Marocaine</label>
-                        </div>
-        
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="styles" id="indienne" value="indienne">
-                            <label class="form-check-label" for="indienne">Indienne</label>
-                        </div>
-    
-                        <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="styles" id="bretonne" value="bretonne">
-                                <label class="form-check-label" for="bretonne">Bretonne</label>
-                            </div>
-        
+                    <h5>Style de cuisine : </h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="vegan" value="Vegan">
+                        <label class="form-check-label" for="vegan">Vegan</label>
                     </div>
-    
-                    <button type="submit" class="btn">Modifier ma table</button>
-                </form>
-
-
-
-
-
-
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="sansgluten" value="sansgluten">
+                        <label class="form-check-label" for="sansgluten">Sans gluten</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="française" value="française">
+                        <label class="form-check-label" for="française">Française</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="japonaise" value="japonaise">
+                        <label class="form-check-label" for="japonaise">Japonaise</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="chinoise" value="chinoise">
+                        <label class="form-check-label" for="chinoise">Chinoise</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="marocaine" value="marocaine">
+                        <label class="form-check-label" for="marocaine">Marocaine</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="indienne" value="indienne">
+                        <label class="form-check-label" for="indienne">Indienne</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="styles" id="bretonne" value="bretonne">
+                        <label class="form-check-label" for="bretonne">Bretonne</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Modifier ma table</button>
+            </form>
         </section>
-
-
     </main>
-    
     <footer></footer>
-
 </body>
 </html>
