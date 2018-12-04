@@ -18,9 +18,6 @@
     align-items: center;
     font-weight: bold;
 }
-#navbar li{
-
-}
 #navbar li a {
     display: block;
     color: white;
@@ -46,26 +43,19 @@
 
 
 /*PHOTO + MAP*/
-.img_map{
+.big_img{
     display: flex;
     width: 100%;
-
 }
 .photo{
-    width: 50%;
-}
-.photo img{
+    background-image: url("../img/asparagus.jpg");
+    background-size: cover;
     width: 100%;
-}
-iframe {
-    width: 50%;
-    height: auto;
-    border : none;
+    height: 40vh;
 }
 /*CONTENT (hors aside et recommandations)*/
 #content{
-    width: 75%;
-    padding-right: 5%;
+    width: 50%;
 
 }
 /*PRESENTATION*/
@@ -97,7 +87,7 @@ iframe {
     border: #33d9b2 solid .3vw ;
     margin: 3% 0;
     padding: 3%;
-    width: 50%;
+    width: 60%;
 }
 .coord table {
     width: 100%;
@@ -108,7 +98,7 @@ iframe {
 }
 /*AVIS*/
 .avis{
-    width: 50%;
+    width: 60%;
 }
 
 /**NOTE**/
@@ -253,18 +243,26 @@ h1 { font-size: 1.5em; margin: 10px; }
 #table4{
     background-image: url("../img/table4.jpg");
 }
+/*ASIDE MAP*/
+#aside_map{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*ASIDE*/
 aside{
-    width: 25%;
+    width: 50%;
     background-color: #33d9b2;
     color: white;
     text-align: center;
-    margin: 5%;
+    margin: 15%;
     padding: 2%;
     display: flex;
     flex-direction: column;
-    height: 15%;
+    height: 35%;
 }
 aside label{
     color: white;
@@ -339,4 +337,14 @@ aside form{
     color: black;
     text-align: center;
     margin: 5% 0;
+}
+
+/*MAP*/
+#map{
+    width: 100%;
+}
+#map iframe{
+    width: 100%;
+    height: 30vw;
+    border: none;
 }

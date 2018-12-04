@@ -26,15 +26,11 @@
 
 <main>
     <!--PHOTO-->
-    <div class="img_map">
-        <div class="photo">
-            <img src="img/asparagus.jpg" alt="table_hote">
-        </div>
+    <div class="big_img" id="big_img">
+        <div class="photo"></div>
 
         <!--MAP-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10840.61684371198!2d-1.5496263515227333!3d47.21356483313492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snantes+tables+d&#39;h%C3%B4tes!5e0!3m2!1sfr!2sfr!4v1543842535842"
-                allowfullscreen>
-        </iframe>
+
     </div>
     <div class="presentation_reco">
         <div class="presentation">
@@ -54,7 +50,13 @@
                 <!--INFOS-->
                 <h4>Traditionnel | Végé | Meat lovers</h4>
                 <h4>Capacité : 70 personnes</h4>
-                <p>Spicy jalapeno bacon ipsum dolor amet andouille pastrami adipisicing, corned beef turkey boudin ground round proident duis rump elit. Andouille cupidatat sunt, ipsum tenderloin aliquip occaecat venison turkey esse aliqua reprehenderit est ham corned beef. Hamburger drumstick eu, nostrud elit mollit shankle pork belly ham pariatur excepteur. Exercitation t-bone ea officia, corned beef ullamco nisi irure pariatur labore esse. Pariatur occaecat deserunt pork loin. Beef ribs deserunt sed bresaola pig short loin doner exercitation ad. Ea meatball minim veniam ribeye, ham hock brisket buffalo jowl quis pork belly capicola.</p>
+                <p>Spicy jalapeno bacon ipsum dolor amet andouille pastrami adipisicing, corned beef turkey boudin
+                    ground round proident duis rump elit. Andouille cupidatat sunt, ipsum tenderloin aliquip occaecat
+                    venison turkey esse aliqua reprehenderit est ham corned beef. Hamburger drumstick eu, nostrud elit
+                    mollit shankle pork belly ham pariatur excepteur. Exercitation t-bone ea officia, corned beef
+                    ullamco nisi irure pariatur labore esse. Pariatur occaecat deserunt pork loin. Beef ribs deserunt
+                    sed bresaola pig short loin doner exercitation ad. Ea meatball minim veniam ribeye, ham hock brisket
+                    buffalo jowl quis pork belly capicola.</p>
 
                 <div class="coord">
                     <table>
@@ -114,16 +116,16 @@
                         <p>
                         <fieldset class="rating">
                             <input type="radio" id="star5" name="rating" value="5"/>
-                        <label class="full" for="star5" title="Parfait - 5 étoiles"></label>
+                            <label class="full" for="star5" title="Parfait - 5 étoiles"></label>
                             <input type="radio" id="star4" name="rating" value="4"/>
-                        <label class="full" for="star4" title="Très bon - 4 étoiles"></label>
+                            <label class="full" for="star4" title="Très bon - 4 étoiles"></label>
                             <input type="radio" id="star3" name="rating" value="3"/>
-                        <label class="full" for="star3" title="Bon - 3 étoiles"></label>
+                            <label class="full" for="star3" title="Bon - 3 étoiles"></label>
                             <input type="radio" id="star2" name="rating" value="2"/>
-                        <label class="full" for="star2" title="Pas terrible - 2 étoile"></label>
+                            <label class="full" for="star2" title="Pas terrible - 2 étoile"></label>
                             <input type="radio" id="star1" name="rating" value="1"/>
-                        <label class="full" for="star1"
-                                                                                           title="Mauvais - 1 étoile"></label>
+                            <label class="full" for="star1"
+                                   title="Mauvais - 1 étoile"></label>
                         </fieldset>
                         </p>
                     </div>
@@ -153,53 +155,74 @@
                     </div>
                 </div>
             </div>
-<!--ASIDE-->
-            <aside>
-                <div id="prix_pers">
-                    <p id="prix">50 €</p><p id="personne"> / convives</p>
-                </div>
-                <form>
-                    <div id="date_heure">
-                        <div class="date">
-                            <label for="date">Date</label>
-                            <input id="date" type="date" name="date">
-                        </div>
-                        <div class="heure">
-                            <label for="heure">Heure</label>
-                            <input id="heure" type="time" name="heure">
-                        </div>
-                    </div>
-                    <div class="nb_conv">
-                        <label for="nb_convives">Nombres de convives</label>
-                        <select id="nb_convives" name="convives">
-                            <option value="1">1 convive</option>
-                            <option value="2">2 convives</option>
-                            <option value="3">3 convives</option>
-                            <option value="4">4 convives</option>
-                            <option value="5">5 convives</option>
-                            <option value="6">6 convives</option>
-                        </select>
-                    </div>
-                    <p id="total">Total : 100 €</p>
-                    <button type="submit" id="reserver">Réserver</button>
-                </form>
-            </aside>
-        </div>
 
+            <!--ADISE+MAP-->
+            <div id="aside_map">
+                <!--ASIDE-->
+                <aside>
+                    <div id="prix_pers">
+                        <p id="prix">50 €</p>
+                        <p id="personne"> / convives</p>
+                    </div>
+                    <form>
+                        <div id="date_heure">
+                            <div class="date">
+                                <label for="date">Date</label>
+                                <input id="date" type="date" name="date">
+                            </div>
+                            <div class="heure">
+                                <label for="heure">Heure</label>
+                                <input id="heure" type="time" name="heure">
+                            </div>
+                        </div>
+                        <div class="nb_conv">
+                            <label for="nb_convives">Nombres de convives</label>
+                            <select id="nb_convives" name="convives">
+                                <option value="1">1 convive</option>
+                                <option value="2">2 convives</option>
+                                <option value="3">3 convives</option>
+                                <option value="4">4 convives</option>
+                                <option value="5">5 convives</option>
+                                <option value="6">6 convives</option>
+                            </select>
+                        </div>
+                        <p id="total">Total : 100 €</p>
+                        <button type="submit" id="reserver">Réserver</button>
+                    </form>
+                </aside>
+
+
+                <!--MAP-->
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10840.61684371198!2d-1.5496263515227333!3d47.21356483313492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snantes+tables+d&#39;h%C3%B4tes!5e0!3m2!1sfr!2sfr!4v1543842535842"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!--SUGGESTIONS-->
         <div id="suggest">
             <p>Vous pourrez aussi aimer :</p>
             <li id="suggest_pics">
                 <ul>
-                    <div class="sugg_img" id="table1"><div class="text_hover">La Table de Devant</div></div>
+                    <div class="sugg_img" id="table1">
+                        <div class="text_hover">La Table de Devant</div>
+                    </div>
                 </ul>
                 <ul>
-                    <div class="sugg_img" id="table2"><div class="text_hover">La Table de Gauche</div></div>
+                    <div class="sugg_img" id="table2">
+                        <div class="text_hover">La Table de Gauche</div>
+                    </div>
                 </ul>
                 <ul>
-                    <div class="sugg_img" id="table3"><div class="text_hover">La Table de Droite</div></div>
+                    <div class="sugg_img" id="table3">
+                        <div class="text_hover">La Table de Droite</div>
+                    </div>
                 </ul>
                 <ul>
-                    <div class="sugg_img" id="table4"><div class="text_hover">La Table de Derrière</div></div>
+                    <div class="sugg_img" id="table4">
+                        <div class="text_hover">La Table de Derrière</div>
+                    </div>
                 </ul>
             </li>
         </div>
