@@ -18,7 +18,7 @@
 
         <h1>Trouvez une table d'hôte</h1>
 
-        <form action=""class="formHome needs-validation col-md-3" novalidate>
+        <form action=""class="formHome needs-validation col-md-4" novalidate>
 
             <div class="form-group col-md-12">
                 <label for="location">Où ?</label>
@@ -49,15 +49,33 @@
             <div class="form-group col-md-12">
                 <label for="style">Qu'est-ce qu'on mange ?</label>
                 <select class="custom-select col-md-12" name="style" id="style">
-                        <option value="">Vegan</option>
-                        <option value="">Sans gluten</option>
-                        <option value="">Française</option>
-                        <option value="">Japonaise</option>
-                        <option value="">Chinoise</option>
-                        <option value="">Marocaine</option>
-                        <option value="">Indienne</option>
-                        <option value="">Bretonne</option>
+                        <option value="Traditionnel">Traditionnel</option>
+                        <option value="Gastronomique">Gastronomique</option>
+                        <option value="Bistrot">Bistrot</option>
+                        <option value="Asiatique">Asiatique</option>
+                        <option value="Indien">Indien</option>
+                        <option value="Italien">Italien</option>
+                        <option value="Mexicain">Mexicain</option>
+                        <option value="Libanais">Libanais</option>
+                        <option value="Africain">Africain</option>
                 </select> 
+            </div>
+
+            <div class="preferences">
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Vegetarien" value="Végétarien">
+                    <label class="form-check-label" for="Vegetarien">Végétarien</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Vegan" value="Vegan">
+                    <label class="form-check-label" for="vegan">Vegan</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="SansGluten" value="SansGluten">
+                    <label class="form-check-label" for="SansGluten">Sans gluten</label>
+                </div>
+
             </div>
             
             <div class="form-group col-md-12">
