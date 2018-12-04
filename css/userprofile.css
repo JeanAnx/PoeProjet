@@ -1,0 +1,105 @@
+body {
+}
+
+hr {
+    width: 20%;
+    margin: 3em auto;
+}
+
+
+h1 , h2 , h5 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 1em;
+    text-align: center;
+    color: #33d9b2;
+    font-weight: normal;
+}
+
+h5 {
+    margin-bottom: 1em;
+}
+
+.bookingsUser > table , .bookingsHost > table {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 2em auto;
+}
+
+table thead td {
+    width: 8%;
+    border-right: 2px solid #33d9b2;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin-top: 1em;
+}
+
+table thead td:first-child {
+    border-left: 2px solid #33d9b2;
+}
+
+table tbody td {
+    color: #33d9b2;
+    height: 2em;
+
+}
+
+
+.formInfos , .formPassword {
+    margin: 2em auto;
+    border: 1px solid #33d9b2;
+    border-radius: .5em;
+    padding: 0.5em 2em;
+}
+
+
+.formPassword h3 , .formInfos h3 {
+    text-align: center;
+    color: #33d9b2;
+    margin: .5em;    
+}
+
+
+button.btn {
+    color: white;
+    display: block;
+    width: 40%;
+    margin: 2em auto 1em auto;
+    background-color: #33d9b2;
+}
+
+.intolerances {
+    text-align: center;
+}
+
+
+
+
+.formMyTable {
+    width: 40%;
+    margin: 1em auto;
+    padding: 0 2em;
+    border: 1px solid #33d9b2;
+    border-radius: .5em;
+}
+
+
+.stylesList {
+    margin: 1em;
+    text-align: center;
+}
+
+.divSeats {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.galerieTable img {
+    height: 90px;
+}
+
+.galerieTable {
+    text-align: center;
+    width: 90%;
+    margin: 1em auto;
+}

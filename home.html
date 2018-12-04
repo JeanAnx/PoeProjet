@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+    </header>
+
+    <main>
+
+        <h1>Trouvez une table d'hôte</h1>
+
+        <form class="formHome needs-validation col-md-4" novalidate>
+
+            <div class="form-group col-md-12">
+                <label for="location">Où ?</label>
+                <input class="form-control" type="text" id="location" name="location">
+            </div>
+
+            <div class="form-group row col-md-12">
+
+                <div class="form-group col-md-6">
+                    <label for="datetime">Quand ?</label>
+                    <input  class="form-control"  type="date" id="datetime" name="datetime">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label for="datetime">À quelle heure ? </label>
+                    <input class="form-control" type="time" id="date" name="date">
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-12">
+
+                <label for="people">Pour combien ? </label>
+                <input class="form-control" type="number" min="1" max="12" id="people" name="people">
+
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="style">Qu'est-ce qu'on mange ?</label>
+                <select class="custom-select col-md-12" name="style" id="style">
+                        <option value="Traditionnel">Traditionnel</option>
+                        <option value="Gastronomique">Gastronomique</option>
+                        <option value="Bistrot">Bistrot</option>
+                        <option value="Asiatique">Asiatique</option>
+                        <option value="Indien">Indien</option>
+                        <option value="Italien">Italien</option>
+                        <option value="Mexicain">Mexicain</option>
+                        <option value="Libanais">Libanais</option>
+                        <option value="Africain">Africain</option>
+                </select> 
+            </div>
+
+            <div class="preferences">
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Vegetarien" value="Végétarien">
+                    <label class="form-check-label" for="Vegetarien">Végétarien</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Vegan" value="Vegan">
+                    <label class="form-check-label" for="Vegan">Vegan</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="SansGluten" value="SansGluten">
+                    <label class="form-check-label" for="SansGluten">Sans gluten</label>
+                </div>
+
+            </div>
+            
+            <div class="form-group col-md-12">
+
+                <label for="price">Prix par personne :</label>
+                <select  class="custom-select col-md-12" name="price" id="price">
+                    <option value="">Moins de 20 euros</option>
+                    <option value="">20 à 30 euros</option>
+                    <option value="">30 à 40 euros</option>
+                    <option value="">+ de 40 euros</option>
+                </select>
+
+            </div>
+
+            <div class="form-group col-md-12">
+
+                <button type="submit" class="btn">Trouver une table</button>
+
+            </div>
+
+        </form>
+
+
+    </main>
+
+
+    <footer>
+    </footer>
+    
+</body>
+</html>
