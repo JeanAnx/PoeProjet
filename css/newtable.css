@@ -3,6 +3,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
+    color: #33d9b2;
     margin: 1em;
     font-family: 'Lato', sans-serif;
 }
