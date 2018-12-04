@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/resultat.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>La table du milieu - Liste des tables</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
         <div id="barreHaut">
             <!-- Attente d'ajout de la barre 'Mon Compte' -->
             <div id="entete">
-                <img src="img/LogoSlideRestau.jpg" alt="?">
-                <span id="TextMenuHaut">Mon compte</span>
+                <div id="nomSite">LA TABLE DU MILIEU</div>
                 <div id="recherche"><input type="search" placeholder="Recherche..." id="find"></div>
+                Mon compte
             </div>
             <div id="zoneFiltre">
                 <div id="menu">
@@ -26,24 +27,86 @@
                                 <li><input type="text" placeholder="Ville, Code Postal" id="cpVille"></li>
                             </ul>
                         </li>
+                        <li class="pere"><a href="#">Ambiance</a>
+                            <ul>
+                                <li><a href="">
+                                    <input id="tradition" type="checkbox" checked>
+                                    <label for="tradition">Traditionnelle</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="gastro" type="checkbox" checked>
+                                    <label for="gastro">Gastronomique</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="bistrot" type="checkbox" checked>
+                                    <label for="bistrot">Bistrot</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="asian" type="checkbox" checked>
+                                    <label for="asian">Asiatique</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="indienne" type="checkbox" checked>
+                                    <label for="indienne">Indienne</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="italia" type="checkbox" checked>
+                                    <label for="italia">Italienne</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="mexico" type="checkbox" checked>
+                                    <label for="mexico">Mexicaine</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="liban" type="checkbox" checked>
+                                    <label for="liban">Libanaise</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="africain" type="checkbox" checked>
+                                    <label for="africain">Africaine</label>
+                                </a></li>
+                            </ul>
+                        </li>
                         <li class="pere"><a href="#">Régime alimentaire</a>
                             <ul>
-                                <li><a href=""><label for="vegetarien">Végétarien :     </label><input type="checkbox" id="vegetarien"></a></li>
-                                <li><a href=""><label for="vegetalien">Végétalien :     </label><input type="checkbox" id="vegetalien"></a></li>
-                                <li><a href=""><label for="noGluten">Sans gluten :    </label><input type="checkbox" id="noGluten"></a></li>
-                                <li><a href=""><label for="noArachide">Sans arachides : </label><input type="checkbox" id="noArachide"></a></li>
+                                <li><a href="">
+                                    <input id="vegetarien" type="checkbox" checked>
+                                    <label for="vegetarien">Végétarien</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="vegan" type="checkbox" checked>
+                                    <label for="vegan">Vegan</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="noGluten" type="checkbox" checked>
+                                    <label for="noGluten">Sans gluten</label>
+                                </a></li>
                             </ul>
                         </li>
                         <li class="pere"><a href="#">Budget</a>
                             <ul>
-                                <li><a href=""><input type="range"></a></li>
+                                <li><a href="">
+                                    <input id="prix1" type="checkbox" checked>
+                                    <label for="prix1">- de 20€</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="prix2" type="checkbox" checked>
+                                    <label for="prix2">De 20 à 30€</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="prix3" type="checkbox" checked>
+                                    <label for="prix3">De 30 à 40€</label>
+                                </a></li>
+                                <li><a href="">
+                                    <input id="prix4" type="checkbox" checked>
+                                    <label for="prix4">+ de 40€</label>
+                                </a></li>
                             </ul>
                         </li>
                         <li class="pere"><a href="#">Tri par...</a>
                             <ul>
                                 <li><a href="">Le mieux noté</a></li>
                                 <li><a href="">Le plus abordable</a></li>
-                                <li><a href="">Le plus rentable</a></li>
                                 <li><a href="">De A à Z</a></li>
                             </ul>
                         </li>
@@ -58,56 +121,56 @@
             <!-- Liste des articles dans la partie gauche (ou centrale si la carte est désactivé -->
             <article>
                 <div class="articleGauche">
-                    <h2>Le reflet</h2>
+                    <h2>Le reflet &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 2 heures</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote1.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>TREAT</h2>
+                    <h2>TREAT &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 2 heures</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote2.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>Totum</h2>
+                    <h2>Totum &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 10 minutes</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote3.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>L'Expérience</h2>
+                    <h2>L'Expérience &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 2 heures</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote4.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>Chacha</h2>
+                    <h2>Chacha &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 5 heures</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote5.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>L Uni</h2>
+                    <h2>L Uni &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 2 semaines</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote6.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>L'instinct gourmand</h2>
+                    <h2>L'instinct gourmand &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 6 jours</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote7.jpg)"></div>
             </article>
             <article>
                 <div class="articleGauche">
-                    <h2>Le fou du roi</h2>
+                    <h2>Le fou du roi &nbsp;&nbsp;&nbsp;<span style="color: #33d9b2;font-size: x-small;">Ouverture dans 2 heures</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque explicabo iste iure laborum, officiis quae tenetur! Asperiores beatae consectetur, delectus eaque eveniet magnam maiores minus omnis pariatur porro saepe.</p>
                 </div>
                 <div class="articleImg" style="background-image:url(img/tableDhote8.jpg)"></div>
@@ -120,8 +183,8 @@
         <div id="map">
             <!-- Ajout de google API -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5420.425156139337!2d-1.555480899836164!3d47.21242271623257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurant!5e0!3m2!1sfr!2sfr!4v1543832880671" allowfullscreen></iframe>
-            <!-- Ajout d'un bouton switch pour afficher ou non la carte
-            <div id="boutonSwitch">
+            <!-- Ajout d'un bouton switch pour afficher ou non la carte -->
+            <!--<div id="boutonSwitch">
                 <input class="switch" name="premium" id="premium" type="checkbox" checked>
                 <label for="premium" class="ui-content" >
                     <div class="ui-switch">
@@ -134,6 +197,23 @@
     </main>
     <footer>
         <!-- A compléter si on rajoute un pied de page (Ex: droits d'utilisation) -->
+        <h3 style="color: white;margin-top: 1.25em;font-size: 15px">SUIVEZ-NOUS</h3>
+        <img src="img/facebook-logo.svg" alt="Facebook" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <img src="img/linkedin-sign.svg" alt="Linkedin" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <img src="img/twitter-logo.svg" alt="Twitter" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <img src="img/instagram-logo.svg" alt="Instagram" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <img src="img/snapchat.svg" alt="SnapChat" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <img src="img/youtube.svg" alt="Youtube" style="height: 1.5em; width:1.5em;margin: 1em .5em 0 .5em">
+        <p style="font-size: x-small;color: white;margin-left: 2em;margin-right: 2em;">
+            © 2018 'La Table Du Milieu' Tous droits réservés. <a>Conditions d'utilisation</a> | <a>Politique de confidentialité</a> | <a>Politique d'utilisation des cookies</a> | <a>Accord d'utilisation des cookies</a> | <a>Plan du site</a>
+            'La Table Du Milieu' ne facture aucuns frais de service aux utilisateurs de son site. Nos partenaires (tables d'hôtes) qui publient des offres de tables et des formules de repas sur 'La Table Du Milieu' ont l'obligation d'inclure tous les tarifs et suppléments dans leurs prix. Par exemple, les frais de luxure et les taxes, ou tous autres frais de gestion ou suppléments divers. Lorsque vous réservez auprès de nos partenaires, consultez leur site pour connaître tous les frais applicables. Les tarifs sont généralement indiqués par personne et en euros (EUR), sauf indication contraire.
+            <br>
+            'La Table Du Milieu' ne garantit aucun prix ou tarif spécifique pour chaque formule ou offre publiée. En outre, les prix sont mis à jour à chaque nouvelle annonce et affichés dans la devise de votre choix à l'aide des taux de conversion en vigueur. Ces conversions de prix sont des estimations. Il est recommandé de vérifier sur le site officiel le montant exact demandé ainsi que la devise.
+            <br>
+            Enfin, 'La Table Du Milieu' ne garantit par la disponibilité des prix affichés sur son site. Des conditions et restrictions telles que des dates de fermeture peuvent s'appliquer.
+            <br>
+            'La Table Du Milieu' n'est pas responsable du contenu d'autres sites internet. Les taxes et frais ne sont pas inclus dans les offres.
+        </p>
     </footer>
 </body>
 </html>

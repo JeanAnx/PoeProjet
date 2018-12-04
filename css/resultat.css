@@ -1,10 +1,36 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 *{
     font-family: 'Lato', sans-serif;
+}
+html,body{
+    height: 100%;
 }
 body{
     margin: 0;
     background-color: ghostwhite;
 }
+
+header{
+    top: 0;
+    height: 7vh;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80vh;
+}
+footer{
+    background-color: #33D9B4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 0;
+    height: 13vh;
+}
+
+/* Début du bouton switch */
 .switch{
     display:none;
 }
@@ -30,7 +56,7 @@ body{
     width: 120px;
 }
 .switch:checked ~ label .ui-switch{
-    background: -webkit-linear-gradient(top,#fa9100,#f44800);
+    background: -webkit-linear-gradient(top,#33D9B4,#00AC86);
 }
 .ui-switch-handle{
     background: -webkit-linear-gradient(top,#f7f5f2,#e3dfd6);
@@ -47,67 +73,78 @@ body{
 .ui-switch-handle:before{
     margin-left: -5.5em;
     line-height: 22px;
-    content: "Carte activé";
+    content: "Carte active";
+    font-size: 12px;
     color: #FFF;
 }
 .ui-switch-handle:after{
     position: relative;
     right: -2em;
     top: -20px;
-    content: "Carte désactivé";
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#listeResultat{
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
-    height: 38em;
-    border-radius: 10px 0 0 10px;
-    overflow: auto;
-    background-color: white;
-    color: black;
-    padding: 1em;
-    margin: 1em;
-    box-shadow: 1px 1px 1px 1px black;
-}
-#map{
-    width: 49%;
-    height: 40em;
-    margin: 1em;
-}
-#zoneFiltre{
-    background-color: white;
-    border-bottom: 2px solid #33d9b2;
-}
-#tableFiltre{
-    vertical-align: top;
-}
-#entete{
-    background-color: #33d9b2;
-    height: 2em;
-    text-align: right;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-#entete img{
-    border-radius: 20px;
-    height: 2em;
+    font-size: 12px;
+    content: "Carte desactive";
 }
 #boutonSwitch{
     position: absolute;
     top: 19em;
     right: 2em;
 }
-#TextMenuHaut{
-    font-weight: bolder;
+/* Fin du bouton switch */
+
+/* Division de l'écran en 2 */
+/* Partie gauche */
+#listeResultat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 74vh;
+    border-radius: 10px 0 0 10px;
+    overflow: auto;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    margin: 1vh 1em 1vh 1em;
+    box-shadow: 1px 1px 1px 1px black;
+}
+/* Partie droite */
+#map{
+    width: 49%;
+    height: 77vh;
+    margin: 1vh 1em 1vh 1em;
+}
+/* Barre commune */
+#entete{
+    background-color: #33d9b2;
+    height: 2em;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    margin: 0 1em 0 0;
+    padding: 0 1em 0 1em;
+}
+#nomSite{
+    border: 2px solid white;
+    color: white;
+    padding: 0 2em 0 2em;
+    font-weight: bolder;
+}
+#find{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    background-color: #33d9b2;
+    color: white;
+}
+#find::placeholder{
+    color: white;
+    font-weight: bolder;
+}
+#recherche{
+    width: 30%;
+    height: 90%;
+    margin: 0 0 0 0;
 }
 article{
     display: flex;
@@ -118,13 +155,13 @@ article{
 }
 .articleImg{
     background-size: cover;
-    width: 10em;
-    height: 10em;
+    width: 20%;
+    height: auto;
     margin: 0.3em 0 0.3em 0;
     text-align: center;
 }
 .articleGauche{
-    width: 60%;
+    width: 80%;
 }
 iframe{
     width: 100%;
@@ -132,12 +169,11 @@ iframe{
     box-shadow: 1px 1px 1px 1px black;
     border: 0;
 }
-#find{
-    margin: 0 1em 0 0;
-    width: 100%;
-}
-#recherche{
 
+/* Bandeau de filtre */
+#zoneFiltre{
+    background-color: white;
+    border-bottom: 2px solid #33d9b2;
 }
 
 #menu{
@@ -145,7 +181,6 @@ iframe{
     justify-content: center;
     background-color: white;
 }
-
 #menu ul{
     margin:0;
     padding: 0;
@@ -157,7 +192,6 @@ iframe{
     margin: auto;
     border-left: 2px solid #33d9b2;
 }
-
 #menu li:first-child{
     border-left: none;
 }
@@ -167,13 +201,20 @@ iframe{
 .pere li:last-child{
     border-radius: 0 0 12px 12px;
 }
-
 #menu li a{
     display:block;
     width:300px;
     color:#33d9b2;
     text-decoration:none;
     padding:5px;
+    font-size: 20px;
+}
+#menu li #cpVille {
+    padding: 5px 0 5px 0;
+    display:block;
+    width:300px;
+    color:#33d9b2;
+    text-decoration:none;
     font-size: 20px;
 }
 #menu ul li ul{
@@ -195,22 +236,60 @@ iframe{
     margin-left: -2px;
     float:none;
 }
-#cpVille{
-    background-color: white;
-    border-left: 2px solid #33d9b2;
-    border-right: 2px solid #33d9b2;
-    margin-left: -2px;
-    float:none;
-
-    border-bottom: 1px solid #33d9b2;
-}
 #menu li:hover ul li:last-child{
     border-bottom: 1px solid #33d9b2;
 }
 #menu li ul{
     position:absolute;
 }
-
-#menu li ul li a{
+#menu li ul li a, #menu li ul li #cpVille{
     color:#33d9b2;
+}
+#cpVille{
+    border: 0;
+    margin: 0 5px 5px 5px;
+}
+
+ul li ul li input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+ul li ul li label {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 15px 30px 15px 62px;
+    border-radius: 100px;
+    color: white;
+    background-color: #33d9b2;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 1s, box-shadow 1s;
+}
+
+ul li ul li label::before {
+    content: 'X';
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: 28px;
+    border: 3px solid #33d9b2;
+    background-color: white;
+    color: #33d9b2;
+    border-radius: 100px;
+    transition: background-color 0.3s;
+}
+
+input:checked + label {
+    background-color: white;
+    color: #33d9b2;
+}
+
+input:checked + label::before {
+    background-color: white;
+    color: white;
 }
