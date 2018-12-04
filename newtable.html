@@ -17,40 +17,78 @@
 
             <div class="form-group">
                 <!-- <label for="nameTable">Nom de l'établissement :</label> -->
-                <input type="text" class="form-control" id="nameTable" placeholder="Nom de l'établissement">
+                <input required type="text" class="form-control" id="name" name="name" placeholder="Nom de l'établissement">
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="description">Description</label> -->
+                <textarea required class="form-control" id="description" name="description" rows="3">Ajouter une description</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Ajouter des images</label>
+                <input type="file" class="form-control-file" id="picture" multiple>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group col-md-6 divSeats">
+
+                    <!-- <label for="">Nombre de couverts :</label> -->
+                    <input required class="form-control" type="number" min="1" name="seats" placeholder="Nombre de couverts">
+
+                </div>
+
+                 <div class="form-group col-md-6">
+
+                    <!-- <label for="">Prix par personne :</label> -->
+                    <select required class="custom-select col-md-12" name="price" id="price" min="15" max="90">
+                        <option value="" selected disabled>Prix par personne</option>
+                        <option value="">Moins de 20 euros</option>
+                        <option value="">20 à 30 euros</option>
+                        <option value="">30 à 40 euros</option>
+                        <option value="">+ de 40 euros</option>
+                    </select>
+    
+                </div>
+
             </div>
 
             <div class="form-group">
                 <!-- <label for="inputAddress">Adresse :</label> -->
-                <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+                <input required type="text" class="form-control" id="address" name="address" placeholder="Adresse">
             </div>
             
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                 <!-- <label for="inputCity">City</label> -->
-                <input type="text" class="form-control" id="inputCity" placeholder="Ville">
+                <input required type="text" class="form-control" id="city" name="city" placeholder="Ville">
                 </div>
                 
                 <div class="form-group col-md-3">
-                <!-- <label for="inputZip">Code postal :</label> -->
-                <input type="text" class="form-control" id="inputZip" placeholder="Code postal">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <!-- <label for="inputEmail4">Email</label> -->
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <!-- <label for="inputZip">Code postal :</label> -->
+                    <input required type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Code postal">
                 </div>
 
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-5">
                     <!-- <label for="inputPassword4">Password</label> -->
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <input required type="text" class="form-control" id="telephone" name="tel" placeholder="Téléphone">
                 </div>
             </div>
+
+            <div required class="form-row">
+                <div class="form-group col-md-12">
+                    <!-- <label for="inputEmail4">site</label> -->
+                    <input type="text" class="form-control" id="website" name="site" placeholder="Site web">
+                </div>
+
+                
+            </div>
+
+
 
             <div class="form-group styles stylesList">
-                    <h5>Styles de cuisine : </h5>
+                    <h5>Style de cuisine : </h5>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="Gluten">
                         <label class="form-check-label" for="inlineRadio1">Vegan</label>
@@ -93,7 +131,7 @@
     
                 </div>
 
-                <button type="submit" class="btn">Sign in</button>
+                <button type="submit" class="btn">Créer votre table</button>
             </form>
 
 
