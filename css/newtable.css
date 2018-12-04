@@ -10,4 +10,20 @@ h1 {
 .formNewTable {
     width: 40%;
     margin: 1em auto;
+    padding: 1em 2em;
+    border: 1px solid #33d9b2;
+    border-radius: 2em;
+}
+
+button.btn {
+    display: block;
+    width: 20%;
+    color: white;
+    background-color: #33d9b2;
+    margin: 1em auto;
+}
+
+.stylesList {
+    margin: 1em;
+    text-align: center;
 }
