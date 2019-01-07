@@ -1,2 +1,7 @@
 # ignore images
 /img
+
+### Les fichiers Préférences PHP Storm
+*.idea
+.idea/
+.idea/*.xml
