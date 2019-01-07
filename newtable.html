@@ -32,25 +32,18 @@
 
             <div class="form-row">
 
-                <div class="form-group col-md-6 divSeats">
+              <div class="form-group col-md-4 divSeats">
+                  <!-- <label for="">Nombre de couverts :</label> -->
+                  <input required class="form-control" type="number" min="1" name="seats" placeholder="Nombre de couverts">
+              </div>
 
-                    <!-- <label for="">Nombre de couverts :</label> -->
-                    <input required class="form-control" type="number" min="1" name="seats" placeholder="Nombre de couverts">
+              <div class="form-group col-md-3 divSeats">
+                  <input class="form-control" type="number" id="priceMin" min="1" name="priceMin" placeholder="Prix Min">
+              </div>
 
-                </div>
-
-                 <div class="form-group col-md-6">
-
-                    <!-- <label for="">Prix par personne :</label> -->
-                    <select required class="custom-select col-md-12" name="price" id="price">
-                        <option value="" selected disabled>Prix par personne</option>
-                        <option value="">Moins de 20 euros</option>
-                        <option value="">20 à 30 euros</option>
-                        <option value="">30 à 40 euros</option>
-                        <option value="">+ de 40 euros</option>
-                    </select>
-    
-                </div>
+              <div class="form-group col-md-3 divSeats">
+                  <input class="form-control" type="number" id="priceMax" min="1" name="priceMax" placeholder="Prix Max">
+              </div>
 
             </div>
 
@@ -58,13 +51,13 @@
                 <!-- <label for="inputAddress">Adresse :</label> -->
                 <input required type="text" class="form-control" id="address" name="address" placeholder="Adresse">
             </div>
-            
+
             <div class="form-row">
                 <div class="form-group col-md-4">
                 <!-- <label for="inputCity">City</label> -->
                 <input required type="text" class="form-control" id="city" name="city" placeholder="Ville">
                 </div>
-                
+
                 <div class="form-group col-md-3">
                     <!-- <label for="inputZip">Code postal :</label> -->
                     <input required type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Code postal">
@@ -82,7 +75,7 @@
                     <input type="text" class="form-control" id="website" name="site" placeholder="Site web">
                 </div>
 
-                
+
             </div>
 
 
@@ -93,32 +86,32 @@
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="Gluten">
                         <label class="form-check-label" for="inlineRadio1">Vegan</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="Poisson">
                         <label class="form-check-label" for="inlineRadio2">Sans gluten</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="Crustacés">
                         <label class="form-check-label" for="inlineRadio3">Française</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio4" value="Soja">
                         <label class="form-check-label" for="inlineRadio4">Japonaise</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio5" value="Lait">
                         <label class="form-check-label" for="inlineRadio5">Chinoise</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio6" value="Fruits à coque">
                         <label class="form-check-label" for="inlineRadio6">Marocaine</label>
                     </div>
-    
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio7" value="Arachides">
                         <label class="form-check-label" for="inlineRadio7">Indienne</label>
@@ -128,7 +121,7 @@
                             <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio8" value="Arachides">
                             <label class="form-check-label" for="inlineRadio8">Bretonne</label>
                         </div>
-    
+
                 </div>
 
                 <button type="submit" class="btn">Créer votre table</button>
@@ -136,7 +129,7 @@
 
 
 
-        
+
 
 
 
@@ -147,6 +140,6 @@
 
 
     </form>
-    
+
 </body>
 </html>
